@@ -178,9 +178,9 @@
 
 <section class="section">
     <div class="container is-max-desktop">
-        <center><img src="./static/images/teaser.png" width="100%"/></center>
+        <center><img src="./static/images/teaser.png" width="120%"/></center>
         <p class="has-text-centered">
-            LexVLA can generate a lexical representation of the input image (the first word cloud figure), or to pick some patches of the image for local lexical information representation (the second word cloud figure, with the selected patches boxed in red), and to select the most relevant patches of the image given the text content (the rightmost figure, with caption ’horse’, with the second-to-last figure is the ground-truth mask).
+            LexVLA can generate a lexical representation of the input image (the first wordcloud), or to pick some patches of the image for local lexical information representation (the second wordcloud, with the selected patches boxed in red), and to select the most relevant patches of the image given the text content (the rightmost figure, with caption ’horse’, with the second-to-last figure is the GT mask).
         </p>
     </div>
 </section>
@@ -220,7 +220,7 @@
     <h2 class="title is-3 has-text-centered">Method</h2>
     <center><img src="./static/images/model architecture.png" width="100%"/></center>
     <p class="has-text-centered">
-      We learn a unified lexical representation with distinct codebooks for text and visual modalities. 
+      We learn a unified lexical representation with distinct codebooks for text and visual modalities. <br>
       We train LexVLA with the standard contrastive objectives along with the proposed overuse penalty to encourage sparsity while preventing meaningless activation.
     </p>
   </div>
@@ -236,7 +236,7 @@
         <!-- Performance under different sparsity -->
         <h3 class="title is-4">Performance under different sparsity</h3>
         <div class="content has-text-centered">
-          <center><img src="./static/images/sparsity_performance_v3.png" width="100%"/></center>
+          <center><img src="./static/images/sparsity_performance_v3.png" width="120%"/></center>
           <p>
             LexVLA is robust against the sparsity ratio even in a very high ratio (98.27%, <b>only 296 activated tokens</b>).
           </p>
@@ -245,7 +245,7 @@
         <!-- Lexical visualization -->
         <h3 class="title is-4">Lexical visualization</h3>
         <div class="content has-text-centered">
-          <center><img src="./static/images/alignment cases.png" width="100%"/></center>
+          <center><img src="./static/images/alignment cases.png" width="120%"/></center>
           <p>
             Visualization of the image lexical representation obtained by LexVLA. Larger word indicates larger lexical value. The first row represents the complete image, and the second row represent local patches (boxed in red). LexVLA learns a well-aligned lexical representation for both image and patches <b>without local supervision</b>.
           </p>
@@ -254,7 +254,7 @@
         <!-- PatchDis visualization -->
         <h3 class="title is-4">PatchDis visualization</h3>
         <div class="content has-text-centered">
-          <center><img src="./static/images/our_detection_result.png" width="100%"/></center>
+          <center><img src="./static/images/our_detection_result.png" width="120%"/></center>
           <p>
             <b>PatchDis visualization.</b> The same color indicates the same category. LexVLA correctly predicts the corresponding region, even for the small-scale objects, like the bottle in the first image.
           </p>
